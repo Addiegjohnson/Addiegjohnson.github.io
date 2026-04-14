@@ -1,0 +1,107 @@
+/*CSS DOCUMENT*/
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+	
+div.container {
+        max-width: 40em;
+        margin: auto;
+        padding: 1em;	
+}
+
+/* I have *some* selectors with their declarations in the declaration block. You’ll need more selectors and declaration blocks. */
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	/* flex: 1em;  You need to fill this out and delete the comment.*/
+	flex: 1 0 20em ;
+	box-sizing: border-box;
+}
+.personal-info ul {
+	padding-left: 0;
+	margin-left: 0;
+}
+ .personal-info ul li {
+	  display: flex;
+	  list-style-type :none;
+	  flex-wrap: wrap;
+	  margin: 0 1em 1em 0; 		  
+ }
+
+ .personal-info ul li label {
+	flex: 1 0 2em;	
+ }
+
+ .order ul {
+	display:flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-left: 0;
+
+ }
+
+ .order ul li { 
+    flex: 1 0 50%;
+	list-style-type :none;	
+ }
+
+.method ul {
+	display:flex;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.method ul li {
+	flex: 1 0 50%;
+	list-style-type :none;	
+}
+ 
+section {
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section p {
+	margin-top: 0;
+
+}
+
+h3 { 
+	margin: 0em;
+}
+
+textarea {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 6em;
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	color: #777;
+	}
+
+/* You want to delete this line to make the media query work. Then you’ll only need one declaration block with one declaration in it. You got it, right? You know how to center the content on the page.
+@media only screen and (min-width: 40em) {
+
+  div.container {
+    margin: _____;
+  }
+
+}
+  
+➤ Delete this line too. */
+@media only screen (min-width: 40em) {
+	div.container {
+		margin: auto;
+	}
+}
