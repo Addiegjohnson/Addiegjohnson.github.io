@@ -1,0 +1,485 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+div.container, div.home-container { 
+	max-width: 50em;
+	margin: auto;
+}
+a {
+    text-decoration: none;
+}
+	
+nav ul {
+    list-style-type: none;
+    padding:0.5em 0;
+    text-align: center;
+}
+
+nav ul li a{
+   font-family: "amandine", sans-serif;
+   font-weight: 400;
+   font-style: bold;
+    font-size: 1.5em;
+    color: rgb(113, 139, 100);
+    margin: 0.5em 0 0.5em 0;
+}
+
+
+h1 {
+    width: 30em;
+    padding: 0.5em;
+    margin: 0 auto; 
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: "amandine";
+    color: rgb(189, 202, 154);
+    font-weight:bold;
+    margin-left: 0em;
+    }
+
+section.mainstory h2 {
+        font-size: 3em;
+        font-family: "amandine";
+        color: rgb(113, 139, 100);
+        font-weight:800;
+        margin-left: 0em;
+        }   
+section.mainstory {
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+p {
+   font-family: "clother", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+        font-size: 1em;
+        color: rgb(0, 45, 4);
+        margin-left: 0em;
+            }
+
+section.tertiary p {
+                font-size: 1em;
+                font-family: "clother", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+                padding-bottom: 0.3em;
+                }   
+
+section.tertiary h2 {
+                    font-size: 1.5em;
+                    font-family: "amandine";
+                    font-weight: bold;
+                    border-top: 1.5px solid rgb(113, 139, 100);
+                    padding-top: 0.5em;
+            
+                    }  
+                    
+
+footer {
+                    
+                    padding: 1rem 0.5rem;
+                    background-color: rgb(249, 219, 219);
+                    box-sizing:border-box;
+                
+                    
+}
+
+ footer p {
+font-family: "warbler-banner";
+font-weight: 400;
+font-style: normal;
+                    font-size: 1.2em;
+                    color:rgb(255,255,255);
+                    margin-left: 0em; 
+
+ }         
+ 
+ figcaption {
+    padding-bottom: 1em;
+    font-family: "clother", sans-serif;
+   font-weight: 300;
+    font-style: italic;
+    font-size: 1.3em;
+    color: rgb(158, 158, 158);
+    margin-left: 0.5em;
+ }
+
+ aside {
+    background-color: rgb(230, 232, 220);
+    padding: 1em 0.5em;
+ }
+ aside h2 { 
+   margin-left: 0em;
+ }
+ aside p { 
+    padding-bottom: 0.5em;
+    margin-left: 0em;
+    font-family: "clother", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+    font-size: 1.2em;
+ }
+ article{
+   max-width: 40em;
+ }
+ article h2{
+    font-size: 3em;
+    margin-left: 0em;  
+ }
+
+ article p { 
+    font-size: 1.2em ;
+    padding: 0em 0.5em;
+ }
+
+ nav ul li { 
+    padding: 0em 0.5em 0.5em 1em;
+ }
+
+ section.secondary {
+   padding: 0em 0.5em;
+ }
+
+ 
+ @media screen and (min-width:50em) {
+    
+   nav ul li {
+       display: inline-block;
+       padding: 0.5em 1em 0.5em 0em;
+       
+   }
+   
+   nav ul li a {
+       margin:0;
+       padding-right:1.5em;
+       
+   }
+      
+   h1 {
+      padding-left: 0.5em;
+      font-size: 1em;
+   }
+   figcaption {
+       margin: 0 
+   }
+   p {
+       margin-bottom: 1.5em ; 
+       margin-left: 0em;   
+   }
+    
+   section.secondary h2, section.secondary p { 
+      margin-left: 0rem;
+
+   }
+
+   header img {
+       margin: 1em 0;
+
+   }
+   div.container {
+       max-width: 50em;
+   }
+
+
+}
+    
+@media only screen and (min-width: 60em) {
+   div.home-container {
+    max-width:80em;
+    padding:0 1em;
+    display:grid; 
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+   }
+
+   div.container {
+    max-width:60em;
+    padding:0 1em;
+    display:grid; 
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+   }
+
+   header,footer {
+    grid-column: 1/3;
+   }
+
+   div.home-container main {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+   }
+
+   div.home-container aside {
+    background:none;
+    padding:0;
+    margin-top: 0;
+   }
+
+   div.home-container aside {
+    margin-top: 0;
+   }
+
+   section.mainstory {
+    grid-column: 2/4;
+    grid-row:1/3;
+    display:flex;
+   }
+
+   section.mainstory a {
+    flex:1 0 12em;
+    display:flex;
+    flex-direction: column;
+   }
+
+   section.mainstory a figure {
+    flex: 1 0 12em;
+    display:flex;
+   }
+
+   section.mainstory a figure img {
+    object-fit:cover;
+   }
+
+   section.mainstory a h2 {
+    flex: 0 0 1em;
+    margin: 0em;
+   }
+
+   section.mainstory a p {
+    flex: 0 0 4em;
+   }
+
+   section.secondary {
+    display:flex;
+   }
+
+   section.secondary a {
+    flex:1 0 12em;
+    display:flex;
+    flex-direction: column;
+   }
+
+   section.secondary a figure {
+    flex: 1 0 12em;
+    display:flex;
+   }
+
+   section.secondary a figure img {
+    object-fit:cover;
+   }
+
+   section.secondary a h2 {
+    flex: 0 0 1em;
+   }
+   
+   section.secondary a p {
+    flex: 0 0 4em;
+   }  
+   
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8)
+{
+    opacity: 1;
+}
+
+nav.photogallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr) ;
+    grid-gap: 0.2em;
+    max-width:50em;
+    margin: auto 0;
+}
+ nav.photogallery img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    
+ }
+
+ 
+
+.photogallery-container input{
+    display: none;
+}
+
+section.gallery h2 {
+    font-size: 4em;
+    text-align: center;
+}
+
+section.gallery p {
+    font-size: 1em;
+    text-align: center;
+}
+
+main.photogallery  {
+    position: relative;
+    overflow: hidden;
+    margin:auto;
+    padding-bottom: calc(60% + 5em);
+    grid-column: 1/3;
+    text-align: center;
+}
+
+main.photogallery figure {
+    margin: 0;
+    width: calc(100% - 2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding-left: 1em;
+    
+
+}
+main.photogallery figure img {
+    width: 100%;
+    height: 30em;
+    object-fit: contain;
+    display: block;
+
+}
+main.photogallery figcaption  { 
+    padding-bottom: 1em;
+    font-family: "clother", sans-serif;
+   font-weight: 300;
+    font-size: 1.3em; 
+    margin: 1em 0;
+    color: rgb(0, 45, 4);
+    text-align: center;
+
+}
+
+div.photogallery-container {
+    background-color: rgb(249, 219, 219);
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 1em;
+    grid-column: 1/3;
+}
+ form {
+    background-color: rgb(113, 139, 100);
+    max-width: 62em;
+    margin: 0 auto;
+    padding:1.5em;
+
+ }
+
+ button{
+    background-color:rgb(249, 219, 219);
+    color:rgb(113, 139, 100);
+    margin: 0.5em 0 1em 0em;
+    border-radius: 0.5em;
+    font-family: "clother", sans-serif;
+   font-weight: bold;
+   font-size: 1.5em; 
+   border: none;
+   padding: 0.5em 1em;
+ }
+
+ .container main { 
+    grid-column: 1/3;
+ }
+
+ .personal-info ul {
+	list-style: none;
+    padding: 0;  
+	margin-left: 0;
+}
+.subscribe ul {
+    list-style: none;
+}
+
+.personal-info ul li {
+     display: flex;
+     list-style-type :none;
+     flex-wrap: wrap;
+     margin: 0 1em 1em 0; 
+     align-items: center;
+     gap: 1em;		  
+}
+
+.personal-info label {
+   flex: 0 0 3em;
+   font-family: "clother", sans-serif;
+   font-weight: 300;
+   font-size: 1.3em; 
+   color:rgb(226, 229, 216);
+
+}
+
+section.personal-info ul li input[type="text"],
+section.personal-info ul li input[type="email"] 
+{
+    flex: 1 0 20em ;
+	box-sizing: border-box;
+    max-width: 25em;
+    font-family: "clother", sans-serif;
+   font-weight: 300;
+    font-size: 1.3em; 
+
+}
+
+.subscribe h3 {
+    font-family: "amandine";
+    font-weight: bold;
+     font-size: 1.3em;  
+     color:rgb(226, 229, 216);
+     font-size: 1.3em;
+}
+
+.subscribe label {
+    font-family: "clother", sans-serif;
+   font-weight: 300;
+   font-size: 1.3em; 
+   color:rgb(226, 229, 216);
+
+}
+
+.personal-info h3 {
+    font-family: "amandine";
+    font-weight: bold;
+     font-size: 1.3em;  
+     color:rgb(226, 229, 216);
+     font-size: 1.3em;
+   
+}
+
+.newsletter h2 {
+    font-size: 1.5em;
+    font-family: "amandine";
+    color: rgb(189, 202, 154);
+    font-weight:bold;
+    margin-left: 0em;
+}
+
+.newsletter main figure img {
+    max-width: 65em;
+    object-fit: cover;
+    margin:0 auto;
+}
+
+
+article figure img{ 
+    width: 100%;
+    box-sizing: border-box;
+
+ }
